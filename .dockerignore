@@ -1,0 +1,21 @@
+# Exclude Maven build-related files and directories
+node_modules/
+*.iml
+.idea/
+
+# Exclude version control system files and directories (e.g., Git or SVN)
+.git
+.gitignore
+.svn
+
+# Exclude temporary and build files
+*.log
+*.swp
+.DS_Store
+
+# Exclude development and test-related files
+#src/test/
+#src/main/resources/application-dev.properties
+#src/main/resources/application-test.properties
+
+.mvn
