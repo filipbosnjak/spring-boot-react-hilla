@@ -15,6 +15,7 @@ export default function MainLayout() {
           <h1 className="text-l m-0">My App</h1>
           <nav>
             <NavLink to="/">Hello World</NavLink>
+            <NavLink to="/users">Users</NavLink>
             <NavLink to="/about">About</NavLink>
           </nav>
         </header>

@@ -11,7 +11,7 @@ export default function HelloWorldView() {
     <>
       <section className="flex p-m gap-m items-end">
         <TextField
-          label="Your name"
+          label="Your naasdfme"
           onValueChanged={(e) => {
             setName(e.detail.value);
           }}
@@ -19,6 +19,7 @@ export default function HelloWorldView() {
         <Button
           onClick={async () => {
             const serverResponse = await HelloWorldService.sayHello(name);
+
             Notification.show(serverResponse);
           }}
         >
