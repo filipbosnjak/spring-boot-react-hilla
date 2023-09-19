@@ -6,6 +6,8 @@ import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.UUID;
+
 @Entity
 @Table(name = "users")
 @NoArgsConstructor
@@ -13,7 +15,7 @@ import lombok.NoArgsConstructor;
 public class User {
 
     @Id
-    private Long id;
+    private UUID id;
     private String username;
     private String email;
 }

@@ -11,7 +11,7 @@ export default function HelloWorldView() {
     <>
       <section className="flex p-m gap-m items-end">
         <TextField
-          label="Your naasdfme"
+          label="Your name"
           onValueChanged={(e) => {
             setName(e.detail.value);
           }}

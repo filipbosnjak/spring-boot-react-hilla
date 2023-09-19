@@ -7,6 +7,7 @@ import dev.hilla.Endpoint;
 import dev.hilla.Nonnull;
 
 import java.util.List;
+import java.util.UUID;
 
 import static com.example.application.utils.RandomUtils.generateRandomId;
 
@@ -30,7 +31,7 @@ public class UserController {
     ) {
         if(userRepository.findAll().size() < 30) {
             try {
-                user.setId(generateRandomId());
+                user.setId(UUID.randomUUID());
                 userRepository.save(user);
             } catch (Exception e) {
                 return "Error";
@@ -40,5 +41,36 @@ public class UserController {
             return "Max rows in DB exceeded";
         }
 
+    }
+
+    public String updateUser(
+            User user
+    ) {
+        if(userRepository.findAll().size() < 30 && userRepository.existsById(user.getId())) {
+            try {
+                userRepository.save(user);
+            } catch (Exception e) {
+                return "Error";
+            }
+            return "User updated successfully";
+        } else {
+            return "Max rows in DB exceeded";
+        }
+
+    }
+
+    public String deleteUser(
+            User user
+    ) {
+        if(userRepository.existsById(user.getId())) {
+            try {
+                userRepository.delete(user);
+            } catch (Exception e) {
+                return "Error";
+            }
+        } else {
+            return "User not found";
+        }
+        return "User deleted successfully";
     }
 }
