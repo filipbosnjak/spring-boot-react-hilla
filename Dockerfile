@@ -7,6 +7,6 @@ WORKDIR /app
 COPY pom.xml .
 
 COPY . .
-RUN mvn package -Pproduction
+RUN mvn clean package -Pproduction
 
 CMD ["java", "-jar", "target/users-crud.jar"]

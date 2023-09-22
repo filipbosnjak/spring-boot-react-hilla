@@ -3,6 +3,8 @@
   "license": "UNLICENSED",
   "type": "module",
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@hilla/form": "2.2.0",
     "@hilla/frontend": "2.2.0",
     "@hilla/generator-typescript-cli": "2.2.0",
@@ -15,6 +17,8 @@
     "@hilla/generator-typescript-utils": "2.2.0",
     "@hilla/react-components": "2.1.7",
     "@hilla/react-form": "2.2.0",
+    "@mui/icons-material": "^5.14.9",
+    "@mui/material": "^5.14.10",
     "@polymer/polymer": "3.5.1",
     "@vaadin/bundles": "24.1.7",
     "@vaadin/common-frontend": "0.0.18",
@@ -69,7 +73,11 @@
     "@hilla/form": "$@hilla/form",
     "@hilla/generator-typescript-plugin-backbone": "$@hilla/generator-typescript-plugin-backbone",
     "@hilla/generator-typescript-cli": "$@hilla/generator-typescript-cli",
-    "@hilla/react-form": "$@hilla/react-form"
+    "@hilla/react-form": "$@hilla/react-form",
+    "@emotion/react": "$@emotion/react",
+    "@emotion/styled": "$@emotion/styled",
+    "@mui/material": "$@mui/material",
+    "@mui/icons-material": "$@mui/icons-material"
   },
   "vaadin": {
     "dependencies": {
@@ -110,6 +118,6 @@
       "workbox-core": "7.0.0",
       "workbox-precaching": "7.0.0"
     },
-    "hash": "2a95f971ab36c5e79a2b54e6aab9fc3879eca30bb40c1dcb12d8d799a24367f8"
+    "hash": "d11f28ded495445c30a8296256a11fc96ef2a5c09d39424b5560fc2166babc00"
   }
 }
