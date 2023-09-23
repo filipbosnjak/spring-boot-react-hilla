@@ -5,11 +5,10 @@ import com.example.application.repository.UserRepository;
 import com.vaadin.flow.server.auth.AnonymousAllowed;
 import dev.hilla.Endpoint;
 import dev.hilla.Nonnull;
+import org.springframework.boot.autoconfigure.web.ServerProperties;
 
 import java.util.List;
 import java.util.UUID;
-
-import static com.example.application.utils.RandomUtils.generateRandomId;
 
 @Endpoint
 @AnonymousAllowed
@@ -17,8 +16,10 @@ public class UserController {
 
     private final UserRepository userRepository;
 
-    public UserController(UserRepository userRepository) {
+    private final ServerProperties serverProperties;
+    public UserController(UserRepository userRepository, ServerProperties serverProperties) {
         this.userRepository = userRepository;
+        this.serverProperties = serverProperties;
     }
 
     @Nonnull
@@ -73,4 +74,5 @@ public class UserController {
         }
         return "User deleted successfully";
     }
+
 }

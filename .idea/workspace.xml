@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab5a8ff0-928c-4b01-bd9a-0760553b7df3" name="Changes" comment="add app.props in .gitignore">
-      <change afterPath="$PROJECT_DIR$/frontend/sorting/SortingUtils.ts" afterDir="false" />
+    <list default="true" id="ab5a8ff0-928c-4b01-bd9a-0760553b7df3" name="Changes" comment="intermediate commit">
+      <change afterPath="$PROJECT_DIR$/frontend/views/users/components/Head.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/views/users/components/HeadCells.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/views/users/components/Table.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/application/endpoints/ServerInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/application/endpoints/reports/ReportsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/report-templates/template.jrxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/MainLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/MainLayout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/views/users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/users/Users.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/application/endpoints/usercontroller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/application/endpoints/usercontroller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +28,7 @@
       <list>
         <option value="Dockerfile" />
         <option value="TypeScript JSX File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -122,7 +129,8 @@
       <workItem from="1694977798146" duration="8810000" />
       <workItem from="1695021519908" duration="746000" />
       <workItem from="1695158492916" duration="7864000" />
-      <workItem from="1695395529659" duration="7132000" />
+      <workItem from="1695395529659" duration="7440000" />
+      <workItem from="1695460286650" duration="9207000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -172,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695166467052</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="intermediate commit">
+      <option name="closed" value="true" />
+      <created>1695424239195</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1695424239195</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +201,7 @@
     <MESSAGE value="add crud ops" />
     <MESSAGE value="prod profile" />
     <MESSAGE value="add app.props in .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add app.props in .gitignore" />
+    <MESSAGE value="intermediate commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="intermediate commit" />
   </component>
 </project>
