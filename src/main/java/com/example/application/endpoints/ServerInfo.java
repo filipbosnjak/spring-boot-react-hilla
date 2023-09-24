@@ -3,8 +3,8 @@ package com.example.application.endpoints;
 import com.vaadin.flow.server.auth.AnonymousAllowed;
 import dev.hilla.Endpoint;
 import org.springframework.boot.autoconfigure.web.ServerProperties;
+import org.springframework.core.env.Environment;
 
-import java.net.Inet4Address;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
@@ -14,8 +14,11 @@ public class ServerInfo {
 
     private final ServerProperties serverProperties;
 
-    public ServerInfo(ServerProperties serverProperties) {
+    private final Environment environment;
+
+    public ServerInfo(ServerProperties serverProperties, Environment environment) {
         this.serverProperties = serverProperties;
+        this.environment = environment;
     }
 
     public Integer serverPort() {
@@ -23,10 +26,6 @@ public class ServerInfo {
     }
 
     public String getServerDomain() {
-        try {
-            return InetAddress.getLocalHost().getHostName();
-        } catch (UnknownHostException e) {
-            throw new RuntimeException(e);
-        }
+        return environment.getProperty("DOMAIN_NAME");
     }
 }
