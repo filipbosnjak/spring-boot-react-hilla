@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab5a8ff0-928c-4b01-bd9a-0760553b7df3" name="Changes" comment="intermediate commit">
-      <change afterPath="$PROJECT_DIR$/frontend/views/users/components/Head.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/views/users/components/HeadCells.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/views/users/components/Table.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/application/endpoints/ServerInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/application/endpoints/reports/ReportsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/report-templates/template.jrxml" afterDir="false" />
+    <list default="true" id="ab5a8ff0-928c-4b01-bd9a-0760553b7df3" name="Changes" comment="crud working app">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/routes.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/views/MainLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/MainLayout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/views/users/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/views/users/Users.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/application/endpoints/usercontroller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/application/endpoints/usercontroller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/application/endpoints/ServerInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/application/endpoints/ServerInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +124,7 @@
       <workItem from="1695021519908" duration="746000" />
       <workItem from="1695158492916" duration="7864000" />
       <workItem from="1695395529659" duration="7440000" />
-      <workItem from="1695460286650" duration="9207000" />
+      <workItem from="1695460286650" duration="10949000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -188,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695424239195</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="crud working app">
+      <option name="closed" value="true" />
+      <created>1695490584565</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1695490584565</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +204,7 @@
     <MESSAGE value="prod profile" />
     <MESSAGE value="add app.props in .gitignore" />
     <MESSAGE value="intermediate commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="intermediate commit" />
+    <MESSAGE value="crud working app" />
+    <option name="LAST_COMMIT_MESSAGE" value="crud working app" />
   </component>
 </project>

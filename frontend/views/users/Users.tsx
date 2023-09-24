@@ -39,6 +39,7 @@ export default function Users() {
     const [openEditD, setOpenEditD] = useState(false);
 
     const [port, setPort] = useState(1223)
+    const [serverDomain, setServerDomain] = useState("")
 
     const handleClickOpen = () => {
         setOpenCreateD(true);
@@ -75,6 +76,7 @@ export default function Users() {
     useEffect( () => {
         handleGetAllUsers().then(r => console.log(r))
         ServerInfo.serverPort().then(port => setPort(port || 1223))
+        ServerInfo.getServerDomain().then(doamin => setServerDomain(doamin || ""))
     }, [])
 
     const [order, setOrder] = useState<Order>('asc');
@@ -373,7 +375,7 @@ export default function Users() {
             <a style={{
                 textDecoration: "none",
                 marginLeft: "10px"
-            }} href={`http://localhost:${port}/pdf-report`}>
+            }} href={`http://${serverDomain}:${port}/pdf-report`}>
             <Button style={{
             }} variant="outlined" value="download" onClick={()=> {
             }}>Export PDF<PictureAsPdfIcon style={{
@@ -382,7 +384,7 @@ export default function Users() {
             <a style={{
             textDecoration: "none",
             marginLeft: "10px"
-        }} href={`http://localhost:${port}/xlsx-report`}>
+        }} href={`http://${serverDomain}:${port}/xlsx-report`}>
             <Button style={{
             }} variant="outlined" value="download" onClick={()=> {
             }}>Export Excel<TableViewIcon style={{

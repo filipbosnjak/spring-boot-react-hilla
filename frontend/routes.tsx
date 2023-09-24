@@ -11,11 +11,11 @@ export const routes: RouteObject[] = [
     element: <MainLayout />,
     handle: { title: 'Main' },
     children: [
-      { path: '/', element: <HelloWorldView />, handle: { title: 'Hello World' } },
-      { path: '/users', element: <Users />, handle: { title: 'Users' } },
+      { path: '/', element: <Users />, handle: { title: 'Users' } },
       { path: '/about', element: <AboutView />, handle: { title: 'About' } },
     ],
   },
 ];
 
 export default createBrowserRouter(routes);
+
