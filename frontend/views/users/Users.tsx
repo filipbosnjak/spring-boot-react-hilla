@@ -37,9 +37,8 @@ export default function Users() {
 
     const [openCreateD, setOpenCreateD] = useState(false);
     const [openEditD, setOpenEditD] = useState(false);
-
-    const [port, setPort] = useState(1223)
     const [serverDomain, setServerDomain] = useState("")
+    const [prod, setProd] = useState(true)
 
     const handleClickOpen = () => {
         setOpenCreateD(true);
@@ -75,8 +74,10 @@ export default function Users() {
 
     useEffect( () => {
         handleGetAllUsers().then(r => console.log(r))
-        ServerInfo.serverPort().then(port => setPort(port || 1223))
-        ServerInfo.getServerDomain().then(doamin => setServerDomain(doamin || ""))
+        ServerInfo.getServerDomain().then(doamin => {
+            setServerDomain(doamin || "")
+            setProd(!doamin?.includes(":"))
+        })
     }, [])
 
     const [order, setOrder] = useState<Order>('asc');
@@ -375,7 +376,7 @@ export default function Users() {
             <a style={{
                 textDecoration: "none",
                 marginLeft: "10px"
-            }} href={`http://${serverDomain}:${port}/pdf-report`}>
+            }} href={`http${prod ? "s": ""}://${serverDomain}/pdf-report`}>
             <Button style={{
             }} variant="outlined" value="download" onClick={()=> {
             }}>Export PDF<PictureAsPdfIcon style={{
@@ -384,7 +385,7 @@ export default function Users() {
             <a style={{
             textDecoration: "none",
             marginLeft: "10px"
-        }} href={`http://${serverDomain}:${port}/xlsx-report`}>
+        }} href={`http${prod ? "s": ""}://${serverDomain}/xlsx-report`}>
             <Button style={{
             }} variant="outlined" value="download" onClick={()=> {
             }}>Export Excel<TableViewIcon style={{
